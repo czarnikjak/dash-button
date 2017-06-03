@@ -1,6 +1,5 @@
 from scapy.all import *
-import RPi.GPIO as GPIO
-import time
+
 
 # BUTTONS
 sheeba = '44:65:0d:c5:96:f1'
