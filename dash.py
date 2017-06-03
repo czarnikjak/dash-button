@@ -10,12 +10,7 @@ def arp_detect(pkt):
   if pkt[ARP].op == 1:
       if pkt[ARP].hwsrc == sheeba:
         print("Sheeba Pressed") #Tutaj zamiast print twoja komenda albo funkcja
-        GPIO.setmode(GPIO.BCM)
-        GPIO.setwarnings(False)
-        GPIO.setup(23, GPIO.OUT)
-        GPIO.output(23, GPIO.LOW)
-        time.sleep(0.05)
-        GPIO.output(23, GPIO.HIGH)
+        
       if pkt[ARP].hwsrc == dreamies:
         print("Dreamies Pressed") #Tutaj zamiast print twoja komenda albo funkcja
 
